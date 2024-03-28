@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>e-commerce</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/images/logo.svg">
+</head>
+<body>
+<section class="page" style="background: #F5F5F5;">
+  <div class="navbar w-100">
+    <div class="navbar_desktop container w-100 h-100 d-flex align-items-center justify-content-between">
+      <a href="../index.html">
+        <img class="navbar__logo" src="../assets/images/logo.svg" alt="">
+      </a>
+      <div class="d-flex">
+        <a href="../index.html" class="navbar__link">home</a>
+        <div class="dropdown">
+          <a class="dropdown-toggle navbar__link" href="#" role="button" id="dropdownMenuLink"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            services</a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="./ecommerce.html">Electronic commerce</a></li>
+            <li><a class="dropdown-item" href="./web_dev.html">Web development</a></li>
+            <li><a class="dropdown-item text-decoration-none" href="./app_dev.html">Application development</a></li>
+            <li><a class="dropdown-item" href="./marketing.html">Advertisement marketing</a></li>
+          </ul>
+        </div>
+        <a href="./vacancies.html" class="navbar__link">vacancies</a>
+        <a href="./contacts.html" class="navbar__link">contacts</a>
+        <a href="./about.html" class="navbar__link">about Us</a>
+        <button class="navbar__btn btn-green" data-bs-toggle="modal" data-bs-target="#startProjectModal">Start a
+          project
+        </button>
+      </div>
+    </div>
+    <div class="navbar_mobile w-100 flex-column">
+      <div class="d-flex justify-content-between w-100 flex-wrap">
+        <a href="../index.html">
+          <img class="navbar__logo" src="../assets/images/logo.svg" alt="">
+        </a>
+        <img class="navbar_menu__btn" src="../assets/images/menu.svg" alt="">
+      </div>
+      <div class="w-100 d-flex flex-column d-none navbar_mobile__list align-items-center">
+        <a href="../index.html" class="navbar__link">home</a>
+        <div class="dropdown d-flex flex-column align-items-center">
+          <a class="dropdown-toggle navbar__link mobile_link_dropdown__btn" href="#">
+            services</a>
+
+          <div class="mobile_link__dropdown flex-column align-items-center flex-nowrap">
+            <a class="navbar__link" href="./ecommerce.html">Electronic commerce</a>
+            <a class="navbar__link" href="./web_dev.html">Web development</a>
+            <a class="navbar__link text-decoration-none" href="./app_dev.html">Application development</a>
+            <a class="navbar__link" href="./marketing.html">Advertisement marketing</a>
+          </div>
+        </div>
+        <a href="./vacancies.html" class="navbar__link">vacancies</a>
+        <a href="./contacts.html" class="navbar__link">contacts</a>
+        <a href="./about.html" class="navbar__link">about Us</a>
+        <button class="navbar__btn btn-green" data-bs-toggle="modal" data-bs-target="#startProjectModal">Start a
+          project
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="service_body d-flex justify-content-around align-items-center">
+      <img src="../assets/images/appdevelopment.svg" alt="">
+      <div>
+        <h5>
+          Application development
+        </h5>
+        <p>Smartphone sales are growing at lightning speed, and <br>manufacturing companies are investing fabulous sums
+          in
+          mobile <br>technologies, their development and popularization in the <br>market. Mobile development is a very
+          rapidly
+          growing area of <br>programming, because the number of mobile devices <br>significantly exceeds the number of
+          personal
+          computers, and <br>this trend will only grow.</p>
+      </div>
+    </div>
+    <div class="body__form d-flex align-items-center">
+      <img src="../assets/images/teambuilding.svg" alt="">
+      <div class="body_form__container">
+        <p class="body_form__title">Start a project</p>
+        <p class="body_form__text">Leave your phone number or e-mail and we will contact you.<br>Or call  092-840-05-35
+        </p>
+        <form action="">
+          <div class="d-flex">
+            <input class="body_form__input" type="text" placeholder="Enter your name">
+            <input class="body_form__input" type="text" placeholder="Telephone">
+          </div>
+          <div class="d-flex" style="margin-top: 20px;">
+            <input class="body_form__input" type="text" placeholder="E-mail">
+            <button class="btn-green body_form__btn">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer w-100" style="margin-top: 150px;">
+    <div class="container d-flex justify-content-between">
+      <img src="../assets/images/logo_dark.svg" alt="">
+      <p class="footer__text">Address: 315/85 Floor 3, Moo 12, Nongprue, Banglamung, Chonburi<br>Tel: 092-840-05-35<br>sale@thai-it-hardware.co.th</p>
+    </div>
+  </div>
+  <div class="modal fade" id="startProjectModal" tabindex="-1" aria-labelledby="startProjectModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content start_project_modal">
+        <button class="modal__close" data-bs-dismiss="modal">
+          <img src="../assets/images/cross.svg" alt="">
+        </button>
+        <img src="../assets/images/teambuilding.svg" alt="" class="start_project_modal__img">
+        <div class="start_project_modal__form">
+          <p class="body_form__title">Start a project</p>
+          <p class="body_form__text">Leave your phone number or e-mail and we will contact you.<br>Or call 092-840-05-35
+          </p>
+          <form action="">
+            <div class="d-flex">
+              <input class="body_form__input" type="text" placeholder="Enter your name">
+              <input class="body_form__input" type="text" placeholder="Telephone" style="margin-left: 42px;">
+            </div>
+            <div class="d-flex" style="margin-top: 20px;">
+              <input class="body_form__input" type="text" placeholder="E-mail">
+              <button class="btn-green body_form__btn" style="margin-left: 42px;">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
