@@ -7,6 +7,10 @@
     height: 80px;
 }
 
+.navbar__logo {
+    width: 150px;
+}
+
 .navbar__link {
     color: #ffffff;
     margin-left: 22px;
@@ -960,4 +964,8 @@
         flex: 0 0 auto !important;
         width: 50% !important;
     }
+}
+
+.r-menu{
+    align-items: center;
 }
